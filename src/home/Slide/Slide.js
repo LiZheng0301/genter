@@ -27,10 +27,6 @@ const Slide = ()=> {
         <SlideItem className="item" img_src = {slide_img_2}/>
         <SlideItem className="item" img_src = {slide_img_3}/>
         <SlideItem className="item" img_src = {slide_img_4}/>
-        <SlideItem className="item" img_src = {slide_img_1}/>
-        <SlideItem className="item" img_src = {slide_img_2}/>
-        <SlideItem className="item" img_src = {slide_img_3}/>
-        <SlideItem className="item" img_src = {slide_img_4}/>
 </OwlCarousel>
 </div>
 )
