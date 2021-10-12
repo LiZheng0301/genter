@@ -1,0 +1,53 @@
+.news-section{
+    padding: 0 150px 100px;
+    text-align: center;
+    .news{
+        margin-top: 50px;
+        .image{
+            cursor: pointer;
+            background-color: yellow;
+            overflow: hidden;
+          img{
+              width: 100%;
+              transform: scale(1,1);
+              transition: all 1s;
+              &:hover{
+                  opacity: 0.8;
+                  transform: scale(1.1, 1.1);
+              }
+          }
+        }
+    }
+ .news-content{
+     text-align: left;
+     padding: 20px;
+     .title{
+         font-size: 24px;
+         text-transform: uppercase;
+         font-weight: 500;
+         line-height: 1.3em;
+         text-decoration: none;
+         color: #222222;
+         cursor: pointer;
+         transition: all 0.6s;
+        &:hover{
+            color: yellow;
+        }
+     }
+     .date{
+         position: relative;
+         margin: 30px 0 20px 50px;
+         font-size: 14px;
+         &:before{
+             position: absolute;
+             content: '';
+             top:50%;
+             left:-50px;
+            
+             width: 40px;
+             height: 1px;
+             background-color: #000000;
+         }
+     }
+ }
+}   

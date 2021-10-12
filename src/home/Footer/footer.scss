@@ -1,0 +1,135 @@
+.footerContainer{
+ background-color: #1f1f1f;
+    color :#ffffff;
+    padding-top: 50px;
+.gridcontainer{
+   max-width: 1200px;
+   margin: auto;
+ 
+   .title{
+    font-size: 20px;
+    text-transform: 20px;
+}
+    .contact{
+        padding: 10px;
+        .text{
+            line-height: 2em;
+            color: #999999;
+            margin-bottom: 20px;
+        } .icon{
+                font-size: 18px;
+                margin: 5px;
+            }
+        .phone{
+            margin-bottom: 10px;
+            display: flex;
+           
+            .phoneNumber{
+                cursor: pointer;
+                &:hover{
+                    color: yellow;
+                    transition: all 500ms
+                }
+            }
+        }
+        .email{
+            display: flex;
+            
+            .emailAddress{
+                cursor: pointer;
+                &:hover{
+                    color: yellow;
+                    transition: all 500ms
+                }
+            }
+        }
+    }
+    .blog{
+        padding: 10px;
+        .blogtitle{
+            margin: 8px 20px 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .blogname{
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 18px;
+            margin: 10px 20px
+        }
+        .blogdate{
+            color:#999999;
+            font-size: 14px;
+            margin:10px 20px;
+        }
+    }
+    .tags{
+        padding:10px;
+        .title{
+            margin-left:20px;
+        }
+        .tagcontainer{
+            padding: 20px;
+            button{
+                border: 1px solid #999999;
+                margin: 5px;
+                padding: 5px 10px;
+                background: #1f1f1f;
+                color: #999999;
+                transition: all 500ms;
+                &:hover{
+                    background: yellow;
+                    color: #1f1f1f;
+                    transition: all 500ms;
+                }
+            }
+        }
+    }
+    .newsletter{
+        .text{
+            color: #999999;
+            margin: 30px 0;
+        }
+    .formgroup{  position: relative;
+        input{
+            width: 100%;
+            border-radius: 5px;
+            padding: 8px 40px 8px 20px;
+          
+        }
+        button{
+            position: absolute;
+           border: none;
+           top: 5px;
+           right: 2px;    
+           font-size: 16px;
+           padding: 8px 20px;   
+           background-color: #ffffff;        }}
+    }
+}
+.footer{
+    background: #1a1a1a;    
+    padding: 20px;
+    display: flex;  
+    position: relative;
+
+    .information{
+        position: absolute;
+        right: 200px;
+    }
+    .icongroup{
+        margin-left: 200px;
+        span{
+            cursor: pointer;
+            background: #333333;
+           padding: 8px;
+           margin-right:10px;
+           transition: all 1s;
+           &:hover{
+               background: yellow;
+               transition: all 1s;
+           }
+        }
+    }
+}
+}

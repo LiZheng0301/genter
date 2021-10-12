@@ -1,0 +1,128 @@
+.slide{
+    position: relative;
+    overflow: hidden;
+  }
+ .slide .boxed-text{
+    width: 480px;
+    height: 457px;
+    position: absolute;
+    top:50%;
+    color: #ffffff !important;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    text-align: left;
+    padding: 90px 40px 30px;
+  }
+  .slide .boxed-text::before{
+    position: absolute;
+    content:'';
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.90);
+    clip-path: polygon(73% 0, 100% 28%, 100% 100%, 0 100%, 0 0);
+  }
+ .slide .boxed-text .title{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-family: "Roboto-condensed", sans-serif;
+   transform: scaleY(0);
+   transform-origin: top;
+    opacity: 0;
+    -webkit-transition: all 1000ms 300ms ease;
+      -moz-transition: all 100ms 300ms ease;
+      -ms-transition: all 1000ms 300ms ease;
+      -o-transition: all 1000ms 300ms ease;
+      transition: all 1000ms 300ms ease;
+  }
+  .active .boxed-text .title{
+    transform: scaleY(1) !important;
+    
+    opacity: 1 !important;
+    
+  }
+  .slide .boxed-text h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 60px;
+    position: relative;
+    padding: 0 0 35px;
+    transform: scaleY(0);
+   transform-origin: top;
+    opacity: 0;
+    -webkit-transition: all 1000ms 600ms ease;
+      -moz-transition: all 100ms 600ms ease;
+      -ms-transition: all 1000ms 600ms ease;
+      -o-transition: all 1000ms 600ms ease;
+      transition: all 1000ms 600ms ease;
+  }
+  
+.active .boxed-text h1{
+    transform: scaleY(1) !important;
+    opacity: 1 !important;
+  }
+  .slide .boxed-text h1:before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    background-color: yellow;
+    width: 40px;
+    height: 10px;
+  }
+.slide .boxed-text .text{
+    color: #cccccc;
+    position: relative;
+    margin-top:32px;
+    line-height: 1.8em;
+    transform: scaleY(0);
+    transform-origin: top;
+     opacity: 0;
+     -webkit-transition: all 1000ms 900ms ease;
+     -moz-transition: all 100ms 900ms ease;
+     -ms-transition: all 1000ms 900ms ease;
+     -o-transition: all 1000ms 900ms ease;
+     transition: all 1000ms 900ms ease;
+  }
+.active .boxed-text .text{
+    transform: scaleY(1) !important;
+    opacity: 1 !important;
+  }
+.slide .boxed-text .arrow-box{
+    margin-top: 16px;
+    position: relative;
+    text-align: right;
+    transform: scaleY(0);
+    transform-origin: top;
+     opacity: 0;
+    -webkit-transition: all 1000ms 900ms ease;
+     -moz-transition: all 100ms 900ms ease;
+     -ms-transition: all 1000ms 900ms ease;
+     -o-transition: all 1000ms 900ms ease;
+     transition: all 1000ms 900ms ease;
+  }
+.active .boxed-text .arrow-box{
+    transform: scaleY(1) !important;
+    opacity: 1 !important;
+  }
+.slide .boxed-text .arrow-box .arrow{
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 30px;
+  }
+.slide .boxed-text .arrow-box .arrow:hover{
+    color: #feec42 !important;
+  
+  }
+
+ .active .slideimg{
+    transform: scale(1.14);
+    transition: linear 3s;
+  }

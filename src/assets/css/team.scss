@@ -1,0 +1,212 @@
+
+  .team-section-title{
+    margin-top: 30px;
+    padding-top: 100px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+
+      .number{
+          position: absolute;
+          top: 10px;
+           left: 50%;
+           margin-left: -60px;
+           font-size: 120px;
+          color:#d9d9d9;
+             }
+
+      .title{ 
+            position: relative;
+            font-family: Roboto condensed, sans-serif;
+            text-transform: uppercase;
+            font-size: 40;
+
+      &:before{
+         position: absolute;
+         content:'';
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:-10px;
+        height: 10px;
+        width: 40px;
+        background-color: yellow;
+              }
+            }
+   }
+
+ .team-block{
+
+     max-width: 1200px;
+     margin: auto;
+    .card{  position: relative;
+      .icons{
+        span{
+          padding: 8px;
+          margin-left: 12px;
+          background: #000000;
+          transition: all 1s;
+          cursor: pointer;
+          .faIcon{
+            color:white;
+          }
+          &:hover{
+            background-color: yellow !important;
+            transition: all 1s;
+            .faIcon{
+              color: black !important;
+            }
+          }
+        }
+     position: absolute;
+     right: 20px;
+       bottom: 0;
+       opacity: 0;
+       transition: ease 1s;
+      
+         
+       
+}
+       .image{
+          transition: all 0.8s;
+
+       
+        }
+        .card-content{
+        position: absolute;
+        bottom:0;   
+        color: #ffffff;
+        font-family: Roboto condensed, sans-serif;
+       
+        div.category{
+          position: absolute;
+          bottom: 50px;
+          margin-left: 20px;
+          font-weight: 300;
+        }
+        .name{ 
+          width: 300px;
+          position: absolute;
+          left: 10px;
+          bottom: 5px;
+          text-transform: uppercase;
+          font-weight: 400;
+        }
+        &:before{
+        position: absolute;
+        content:'';
+        bottom:-140px;
+        left: -140px;
+        width:280px;
+        height: 280px;
+        transform: rotate(45deg);
+        background-color:rgba(0,0,0,0.8);
+        transition: all 1s;        
+                }
+            }
+      &:hover{ 
+        .icons{
+          opacity: 1;
+          transition: all 1s;
+          bottom: -50px;
+        }
+        .card-content{
+        color: #000000;
+         &:before{
+        background-color: yellow;
+        opacity: 0.5;
+        transition: ease all 1s;
+         }
+      }
+        .image{
+          transform: scale(1.05,1.05);
+          opacity: 0.8;
+          transition: all 0.8s;
+          
+        }
+    
+    
+    
+    }
+     
+       }
+ }
+.team-block{
+   margin: auto !important;
+}
+.team-section{
+  background-image: url(../images/background/pattern-2.jpg);
+padding: 50px 0 100px;
+}
+
+.scrolltotop{
+
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+   button{
+ border: none;
+  padding: 10px;
+  background-color: #000000;
+  transition: all 1s;
+  color: #ffffff;
+  &:hover{
+    transition: all 1s;
+    background-color: #0099f7;
+  }
+}
+}
+.settingcolorcontainer{
+  position: fixed;
+  top: 60px;
+  z-index: 10;
+  transition: all 1s;
+  .palateheader{
+  position: relative;
+    box-sizing: border-box;
+    width:300px;
+    height: 50px;
+    background: #0099f7;
+    .title{
+      text-transform: uppercase;
+      color: #ffffff;
+      padding: 10px 50px;
+    }
+.settingbutton{
+position: absolute;
+right: 0;
+top:0!important;
+  border:none;
+  top: 60px;
+  background: #0099f7;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  
+  padding: 15px;
+  svg{vertical-align: middle;
+    animation: rotation  2s infinite linear;
+  }
+  
+}}
+.palatecontent{
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+  background: #ffffff;
+  width: 249px;
+
+
+}
+}
+
+
+
+@keyframes rotation{
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}

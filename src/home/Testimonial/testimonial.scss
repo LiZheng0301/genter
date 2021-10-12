@@ -1,0 +1,84 @@
+.testimonial{
+    display: flex;
+
+    img{
+        z-index: -2;
+        width: 50%;
+    }
+    .testimonialcontent{
+        position: relative;
+
+        &:after{
+            position: absolute;
+            content: '';
+            right: -100px;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #1a1a1a;
+            clip-path: polygon(0 0, 90% 0, 100% 23%, 100% 100%, 0 100%);
+            z-index: -1;
+
+        }
+        padding: 150px 30px 100px;
+        width: 50%;
+        height: 500px;
+        background: #1a1a1a;
+        .album{
+            display: flex;
+            img{
+                width: 25%;
+            
+            }   
+            .information{
+                padding: 0 50px 0;
+                 color: #999ea1;
+                 .text{
+                     line-height: 3.5ex;
+                 }
+                 .author{
+                     color: #ffffff;
+                     font-weight: 700;
+                     margin: 20px 70px;
+                     position: relative;
+                     &:before{
+                         position: absolute;
+                         content:'';
+                         bottom: 50%;
+                         width: 50px;
+                         height: 1px;
+                         left: -70px;
+                         background: #ffffff;
+                        
+
+                     }
+                 }
+             } 
+        }
+
+        .slider-control-centerright{
+            right: 43% !important;
+           button{ 
+            background: transparent !important;
+        }} 
+        .slider-control-centerleft{
+            left: 43% !important;
+            button{
+                background: transparent !important;
+            }
+            &:before{
+                position: absolute;
+                content: '';
+                background: #ffffff;
+                height: 35px;
+                width: 2px;
+                bottom: 0;
+                right: -40%;
+            }
+        }
+        .slider-control-bottomcenter{
+            display: none;
+        }
+
+    }
+}
